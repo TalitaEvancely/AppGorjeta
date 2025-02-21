@@ -18,10 +18,8 @@ class MainActivity : AppCompatActivity() {
      porcentagem da gorgeta
      10%, 15% ou 20 %
      botão calcular e limpar
-
      Recuperar as Views do layout
       - view binding
-
       -recuperar as radios buttons
       - calcular as porcetagens
       - mostrar resultado na tela
