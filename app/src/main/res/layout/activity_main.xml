@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"    >
+    android:layout_height="match_parent"
+    android:background="#fffdf4">
 
     <TextView
         android:id="@+id/tv_title"
@@ -12,7 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:textSize="32sp"
-        android:text="Tips Calculator"
+        android:text="Sua Gorjeta"
+        android:textColor="#2e2e2e"
+        android:textStyle="bold"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:textStyle="bold"
         android:text="Preencha os dados abaixo para realizar o calculo da sua gorgeta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,18 +84,21 @@
         <RadioButton
             android:id="@+id/rb_option_one"
             android:text="10%"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <RadioButton
             android:id="@+id/rb_option_two"
             android:text="15%"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <RadioButton
             android:id="@+id/rb_option_three"
             android:text="20%"
+            android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -102,17 +110,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="4dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#556B2F"
         android:text="Limpar"
         app:layout_constraintEnd_toStartOf="@+id/btn_verticalGuideLine"
         app:layout_constraintStart_toStartOf="@+id/til_number_of_people"
         app:layout_constraintTop_toBottomOf="@+id/rg_percentege" />
 
     <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/btn_verticalGuideLine"
-    android:orientation="vertical"
-    app:layout_constraintGuide_percent="0.5"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+        android:id="@+id/btn_verticalGuideLine"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btn_done"
@@ -120,20 +130,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginStart="4dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#556B2F"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="@+id/til_number_of_people"
         app:layout_constraintStart_toEndOf="@+id/btn_verticalGuideLine"
         app:layout_constraintTop_toBottomOf="@+id/rg_percentege" />
 
-    <TextView
-        android:id="@+id/tv_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textSize="24sp"
-        tools:text="57,2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_done" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
