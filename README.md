@@ -34,5 +34,7 @@ Projeto de aplicativo Android com linguagem Kotlin que calcula a gorjeta de acor
 - Abra no Android Studio
 - Compile e instale no seu dispositivo Android.
 
-  Feito com ❤️ por Talita Evancely!
+  
+
+Feito com ❤️ por Talita Evancely                                               
 
