@@ -46,6 +46,7 @@
             android:id="@+id/tie_total"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textColor="#2e2e2e"
             android:hint="Digite o valor total da conta"
             android:inputType="numberDecimal"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -65,6 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:maxLength="2"
+            android:textColor="#2e2e2e"
             android:hint="Digite o numero de pessoas"
             android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -74,6 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:textColor="#2e2e2e"
         android:gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"

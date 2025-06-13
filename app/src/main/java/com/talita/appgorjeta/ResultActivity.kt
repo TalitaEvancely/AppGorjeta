@@ -1,6 +1,8 @@
 package com.talita.appgorjeta
 
+import android.os.Build
 import android.os.Bundle
+import android.text.Html
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,24 +18,25 @@ class ResultActivity : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val valorTotalConta = intent.getFloatExtra("totalConta", 0f)
-        val nPessoas = intent.getIntExtra("numeroPessoas", 1)
-        val porcentagem = intent.getIntExtra("porcentagem", 0)
-
-        val contaPorPessoa = valorTotalConta / nPessoas
-        val valorGorjeta = contaPorPessoa * porcentagem / 100
-        val totalComGorjeta = contaPorPessoa + valorGorjeta
-
-        val mensagem = "Sua conta de R$ $valorTotalConta com gorjeta de $porcentagem %,\n" +
-                "dividida por $nPessoas pessoas,\n" +
-                "ficará em R$ $totalComGorjeta por pessoa."
+    val totalTable = intent.getFloatExtra("totalTable", 0.0f)
+    val numPeople = intent.getIntExtra("numPeople", 0)
+    val percentage = intent.getIntExtra("percentage",0)
+    val totalAmount = intent.getFloatExtra("totalAmount", 0.0f)
 
 
-        binding.tvResultMessage.text = mensagem
 
-        binding.btnBack.setOnClickListener {
+        binding.tvPercentage.text = percentage.toString()
+        binding.tvTotalAmount.text = totalAmount.toString()
+        binding.tvTotalTable.text = totalTable.toString()
+        binding.tvTotalNumberPeople.text = numPeople.toString()
+
+
+        binding.btnRefresh.setOnClickListener {
+
             finish()
         }
+
+
     }
 
 }
