@@ -1,4 +1,4 @@
-# App "Calcuçando Gorjeta" 
+# App "Calculando Gorjeta" 
 
 Projeto de aplicativo Android com linguagem Kotlin que calcula a gorjeta de acordo com a quantidade de pessoas decladas e a porcentagem e mostra ao usuário o resultado em uma segunda tela.
 
