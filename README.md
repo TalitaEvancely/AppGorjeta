@@ -27,7 +27,7 @@ Projeto de aplicativo Android com linguagem Kotlin que calcula a gorjeta de acor
 
 ## 📷 Imagens do App
 <img src="https://github.com/user-attachments/assets/2500140a-758a-4389-a1ac-0d41f1cc0b74" width=260/> 
-<img src="[https://github.com/user-attachments/assets/a609ac76-710d-41ef-8df9-d89e8948b10c](https://github.com/user-attachments/assets/dbe6c952-2c77-45f4-9075-1fbc9dc6715a)" width=260/>
+<img src="https://github.com/user-attachments/assets/2406a4b8-a69d-4de2-9983-797427f8d0c1" width=260/>
 
 ## 📦 Como instalar
 - Clone este repositório
